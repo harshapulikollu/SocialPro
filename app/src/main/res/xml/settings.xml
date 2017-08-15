@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="@string/navigation_setting_title">
+
+    <ListPreference android:title="@string/start_url"
+        android:summary="%s."
+        android:key="start_url"
+        android:entryValues="@array/StartValues"
+        android:entries="@array/Start"
+        android:defaultValue="Most_recent"/>
+
+    <SwitchPreference android:title="@string/location_enabled_title" android:summary="@string/location_enabled_summary" android:key="location_enabled" android:defaultValue="false"/>
+
+    <SwitchPreference android:title="@string/hide_editor_newsfeed_title" android:summary="@string/hide_editor_newsfeed_summary" android:key="hide_editor_newsfeed" android:defaultValue="true"/>
+
+    <SwitchPreference android:title="@string/stop_images_title" android:summary="@string/stop_images_summary" android:key="stop_images" android:defaultValue="false"/>
+
+    <SwitchPreference android:title="@string/hide_sponsored_title" android:summary="@string/hide_sponsored_summary" android:key="hide_sponsored" android:defaultValue="true"/>
+
+    <SwitchPreference android:title="@string/hide_birthdays_title" android:summary="@string/hide_birthdays_summary" android:key="hide_birthdays" android:defaultValue="false"/>
+
+    <SwitchPreference android:title="@string/hide_menu_bar_title" android:summary="@string/hide_menu_bar_summary" android:key="hide_menu_bar" android:defaultValue="true"/>
+
+    <SwitchPreference android:title="@string/hide_recently_commented" android:summary="@string/hide_recently_commented_summary" android:key="comments_recently" android:defaultValue="false"/>
+
+</PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/appearance_setting_title">
+
+    <ListPreference android:title="@string/web_themes"
+        android:summary="@string/web_themes_summary"
+        android:key="web_themes"
+        android:entryValues="@array/WebThemes"
+        android:entries="@array/WebThemes"
+        android:defaultValue="Material"/>
+
+    <ListPreference android:title="@string/app_themes"
+        android:summary="@string/app_themes_summary"
+        android:key="app_theme"
+        android:entryValues="@array/AppThemes"
+        android:entries="@array/AppThemes"
+        android:defaultValue="Social"/>
+
+</PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/notifications_setting_title">
+
+    <SwitchPreference android:title="@string/notif" android:key="notif" android:defaultValue="false"/>
+
+    <Preference android:title="@string/notifications_settings" android:summary="@string/notifications_settings_description" android:key="notifications_settings" android:dependency="notif"/>
+
+</PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/general_setting_title">
+
+    <SwitchPreference android:title="@string/fab_enable" android:summary="@string/fab_enable_summary" android:key="fab_enable" android:defaultValue="true"/>
+
+    <SwitchPreference android:title="@string/save_data" android:summary="@string/save_data_summary" android:key="save_data" android:defaultValue="false"/>
+
+    <SwitchPreference android:title="@string/clearcache" android:summary="@string/clearcache_summary" android:key="clear_cache" android:defaultValue="false"/>
+
+    <Preference android:title="@string/navigation_menu_settings" android:summary="@string/navigation_menu_settings_description" android:key="navigation_menu_settings"/>
+
+</PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/more">
+
+    <Preference android:title="@string/more" android:key="moreandcredits"/>
+
+</PreferenceCategory>
+
+</PreferenceScreen>

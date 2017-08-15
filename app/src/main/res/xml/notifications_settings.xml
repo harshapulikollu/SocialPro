@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference android:title="@string/interval_pref"
+        android:defaultValue="300000"
+        android:entryValues="@array/intervalPrefValues"
+        android:entries="@array/intervalPrefTitles"
+        android:key="notif_interval"
+        android:summary="@string/interval_pref_description_new"/>
+
+
+    -<PreferenceCategory android:title="@string/nav_notifications">
+
+    <SwitchPreference android:title="@string/facebook_notifications"
+        android:defaultValue="false" android:key="facebook_notifications"/>
+
+    <RingtonePreference android:title="@string/notification_sound"
+        android:defaultValue="content://settings/system/notification_sound"
+        android:key="ringtone"
+        android:summary="@string/notification_sound_description"
+        android:showSilent="true"
+        android:showDefault="true"
+        android:ringtoneType="notification"
+        android:dependency="facebook_notifications"/>
+
+    <SwitchPreference android:title="@string/vibrate"
+        android:defaultValue="false"
+        android:key="vibrate_notif"
+        android:summary="@string/facebook_notifications"
+        android:dependency="facebook_notifications"/>
+
+    <SwitchPreference android:title="@string/vibrate_double"
+        android:defaultValue="false"
+        android:key="vibrate_double_notif"
+        android:summary="@string/facebook_notifications"
+        android:dependency="vibrate_notif"/>
+
+    <!-- <SwitchPreference android:key="flashlight_as_led_notif" android:dependency="facebook_notifications" android:title="@string/flashlight_as_led" android:summary="@string/flashlight_as_led_summary_notif" android:defaultValue="false"/>-->
+
+
+    <SwitchPreference android:title="@string/led_light"
+        android:defaultValue="false"
+        android:key="led_notif"
+        android:summary="@string/facebook_notifications"
+        android:dependency="facebook_notifications"/>
+
+</PreferenceCategory>
+
+
+    -<PreferenceCategory android:title="@string/menu_messages">
+
+    <SwitchPreference android:title="@string/facebook_message"
+        android:defaultValue="false"
+        android:key="facebook_messages"/>
+
+    <RingtonePreference android:title="@string/notification_sound_msg"
+        android:defaultValue="content://settings/system/notification_sound"
+        android:key="ringtone_msg"
+        android:summary="@string/notification_sound_description"
+        android:showSilent="true"
+        android:showDefault="true"
+        android:ringtoneType="notification"
+        android:dependency="facebook_messages"/>
+
+    <SwitchPreference android:title="@string/vibrate"
+        android:defaultValue="false"
+        android:key="vibrate_msg"
+        android:summary="@string/facebook_message"
+        android:dependency="facebook_messages"/>
+
+    <SwitchPreference android:title="@string/vibrate_double"
+        android:defaultValue="false"
+        android:key="vibrate_double_msg"
+        android:summary="@string/facebook_message"
+        android:dependency="vibrate_msg"/>
+
+    <!-- <SwitchPreference android:key="flashlight_as_led_msg" android:dependency="facebook_messages" android:title="@string/flashlight_as_led" android:summary="@string/flashlight_as_led_summary_msg" android:defaultValue="false"/>-->
+
+
+    <SwitchPreference android:title="@string/led_light"
+        android:defaultValue="false"
+        android:key="led_msj"
+        android:summary="@string/facebook_message"
+        android:dependency="facebook_messages"/>
+
+</PreferenceCategory>
+
+</PreferenceScreen>

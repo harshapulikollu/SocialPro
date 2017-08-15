@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- <string name="facebook_app_id" translatable="false">422483854616848</string>
+   -->
+
+
+
+    <string name="header_profile_pic">Profile Picture</string>
+
+
+    <string name="menu_news">News Feed</string>
+
+
+    <string name="menu_fblogin">Login to Facebook</string>
+    <string name="menu_jump_top">Jump to Top</string>
+    <string name="menu_refresh">Reload</string>
+
+    <string name="menu_forward">Forward</string>
+    <string name="menu_settings">Settings</string>
+
+
+
+    <string name="context_save_image">Save image</string>
+
+    <string name="context_copy_image_link">Copy image link</string>
+
+    <string name="context_copy_link">Copy link</string>
+
+
+
+
+    <string name="notifications_enabled_title">Background Notifications</string>
+    <string name="notifications_enabled_summary">When enabled, you will receive background notifications from Facebook.</string>
+
+    <string name="notification_interval_title">Background Notifications interval</string>
+    <string name="notification_interval_summary">Specify the update interval for the notification service.</string>
+    <string-array name="notification_interval">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+    </string-array>
+    <string-array name="notification_interval_values">
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>7200000</item>
+    </string-array>
+
+    <string name="notifications_vibration_title">Vibrate</string>
+    <string name="notifications_vibration_summary">When enabled, notifications will make your device vibrate.</string>
+
+    <string name="content_setting_title">Content</string>
+
+
+    <string name="most_recent_menu_title">Most Recent in Navigation Menu</string>
+    <string name="most_recent_menu_summary">Enable this to show the Most Recent button in the Navigation Menu.</string>
+
+
+    <string name="hide_editor_newsfeed_snackbar">Reload for changes to take effect</string>
+
+        <string name="hide_fab_on_scroll_title">Hide Floating Action Button on scroll</string>
+    <string name="hide_fab_on_scroll_summary">Hide the FAB when scrolling down</string>
+
+
+    <string name="back_button_enabled_title">Back button</string>
+    <string name="back_button_enabled_summary">When enabled, the back button will be visible in the draw.</string>
+
+    <string name="jump_top_enabled_title">Jump to Top button</string>
+    <string name="jump_top_enabled_summary">When enabled, the Jump to Top button will be visible in the draw.</string>
+
+    <string name="login_button">Login</string>
+    <string name="share_text">Share</string>
+    <string name="fb">Facebook</string>
+    <string name="tw">Twitter</string>
+    <string name="not_logged_in">You are not logged in</string>
+
+    <string name="error_super_wrong">Something went super wrong</string>
+    <string name="error_facebook_noconnection">Could not access Facebook</string>
+    <string name="error_facebook_error">Something went wrong on Facebook\'s end</string>
+
+    <string name="loading">Loading</string>
+    <string name="notification_multiple_text">%s new notifications.</string>
+    <string name="notification_viewall">View all Notifications</string>
+
+
+    <string name="title_activity_twitter">Twitter</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tw">TwActivity</string>
+
+    <string name="pref_cat_general">General</string>
+    <string name="pref_about">About</string>
+    <string name="pref_about_sry">Developed by Harsha pulikollu.</string>
+
+    <!--For app -->
+    <string name="app_name">Active Pro</string>
+    <!--<string name="facebook_app_id" translatable="false">1900598693487821</string>
+    <string name="fb_login_protocol_scheme">fb1900598693487821</string> -->
+    <string name="facebook_app_id">1505789299441327</string>
+    <string name="fb_login_protocol_scheme">fb1505789299441327</string>
+    <string name="silent">No sound</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="default_user">User</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="context_share_image">Share image</string>
+    <string name="context_share_link">Share link</string>
+    <string name="context_share_image_progress">Sharing image&#8230;</string>
+    <string name="sharing_video">Sharing video…</string>
+    <string name="quick_description">Add a quick description</string>
+    <string name="content_copy_link_done">Link copied to clipboard</string>
+    <string name="error_login">Something went wrong, please try logging in again</string>
+    <string name="permission_denied">Permission denied, cannot complete action</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="bookmarks_header">Bookmarks</string>
+    <string name="new_bookmark">Added:</string>
+    <string name="remove_bookmark">Removed:</string>
+    <string name="sharing_info">It can take some time, depending on the file size</string>
+
+    <!-- Navigation -->
+    <string name="navigation_setting_title">NAVIGATION</string>
+    <string name="navigation_menu_settings">Navigation menu items</string>
+    <string name="navigation_menu_settings_description">You can show/hide items in the navigation menu.</string>
+    <string name="save_data">Lower data mode</string>
+    <string name="save_data_summary">Load the Facebook in basic version also disable the badges and profile info. updates.</string>
+    <string name="clearcache">Clear cache on exit</string>
+    <string name="clearcache_summary">It will take more time to open the app.</string>
+    <string name="fab_enable">Floating Action Button</string>
+    <string name="fab_enable_summary">Show the FAB.</string>
+    <!-- Navigation: fab -->
+    <string name="fab_text">Post a status</string>
+    <string name="fab_photo">Post a photo</string>
+    <string name="fab_checkin">Check In</string>
+    <string name="fab_jump_top">Jump to Top</string>
+    <!-- Navigation: items -->
+    <string name="navigation_menu_title">NAVIGATION MENU</string>
+    <string name="ic_menu_exitapp">Exit app</string>
+    <string name="ic_menu_exitapp_summary">Show &#8216;Exit app&#8217; button on navigation drawer.</string>
+    <string name="ic_menu_fblogout">Log out</string>
+    <string name="ic_menu_fblogout_summary">Show &#8216;Log out&#8217; button on navigation drawer.</string>
+    <string name="menu_photos">Photos</string>
+    <string name="menu_photos_summary">Show &#8216;Photos&#8217; button on navigation drawer.</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_events_summary">Show &#8216;Events&#8217; button on navigation drawer.</string>
+    <string name="menu_back">Back</string>
+    <string name="menu_back_summary">Show &#8216;Back&#8217; button on navigation drawer.</string>
+    <string name="menu_top_stories">Top stories</string>
+    <string name="compose_disabled_message1">Shortcuts are disabled</string>
+    <string name="menu_top_stories_summary">Show &#8216;Top stories&#8217; button on navigation drawer.</string>
+    <string name="menu_most_recent">Most Recent</string>
+    <string name="menu_friendreq">Friend Requests</string>
+    <string name="menu_friendreq_summary">Show &#8216;Friend Requests&#8217; button on navigation drawer.</string>
+    <string name="menu_groups">Groups</string>
+    <string name="menu_groups_summary">Show &#8216;Groups&#8217; button on navigation drawer.</string>
+    <string name="menu_messages">Messages</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_search_summary">Show &#8216;Search&#8217; button on navigation drawer.</string>
+    <string name="menu_mainmenu">Main menu</string>
+    <string name="menu_mainmenu_summary">Show &#8216;Main menu&#8217; button on navigation drawer.</string>
+    <string name="messaging_enabled_title">Messaging</string>
+    <string name="messaging_enabled_summary">When enabled, will provide access to Facebook Messages. Disable if you have a messaging app.</string>
+    <!-- End navigation -->
+
+    <!-- Notifications -->
+    <string name="notifications_setting_title">NOTIFICATIONS</string>
+    <string name="notif">Notifications</string>
+    <string name="facebook_message">Message notifications</string>
+    <string name="facebook_notifications">Facebook notifications</string>
+    <string name="sync_problem">Cookies cannot be synced. Try restarting the app</string>
+    <string name="notification_sound_description">Choose a ringtone or silence: \u0020</string>
+    <string name="notifications_settings">Notifications settings</string>
+    <string name="notifications_settings_description">Additional settings. Choose time interval, set up sounds, LED and vibration.</string>
+    <string name="interval_pref">Time interval for checking</string>
+    <string name="notification_sound">Notification sound</string>
+    <string name="interval_pref_description_new">Notifications will be checked every %s.</string>
+    <string name="notification_sound_msg">Message sound</string>
+    <string name="vibrate">Vibration</string>
+    <string name="vibrate_double">Double vibration</string>
+    <string name="led_light">LED light</string>
+
+    <string-array name="intervalPrefTitles">
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+    </string-array>
+    <!-- End Notifications -->
+
+    <!-- General -->
+    <string name="general_setting_title">GENERAL</string>
+    <string name="location_enabled_title">Location access</string>
+    <string name="location_enabled_summary">Enable this to allow Facebook to obtain your location.</string>
+    <string name="hide_editor_newsfeed_title">Hide Status editor in News Feed</string>
+    <string name="hide_editor_newsfeed_summary">When enabled, the status editor will be hidden on the News Feed.</string>
+    <string name="stop_images_title">Don\'t load images</string>
+    <string name="stop_images_summary">When enabled, wont download images. Some images may remain in the cache.</string>
+    <string name="hide_sponsored_title">Hide &#8216;Sponsored&#8217; Content</string>
+    <string name="hide_sponsored_summary">Hide &#8216;Sponsored&#8217; content (ads) from the feed.</string>
+    <string name="hide_birthdays_title">Hide Birthdays</string>
+    <string name="hide_birthdays_summary">Hide birthdays from the feed, events and notifications.</string>
+    <string name="hide_menu_bar_title">Hide Menu bar</string>
+    <string name="hide_menu_bar_summary">When enabled, the Facebook Menu bar will be hidden.</string>
+    <string name="hide_recently_commented">Hide recently commented</string>
+    <string name="hide_recently_commented_summary">X people recently commented on this.</string>
+    <string name="start_url">Start URL</string>
+    <string-array name="Start">
+        <item>MostRecent</item>
+        <item>TopStories</item>
+        <item>Messages</item>
+    </string-array>
+    <!-- End general -->
+    <!-- APPEARANCE -->
+    <string name="appearance_setting_title">APPEARANCE</string>
+    <string name="web_themes">Web themes</string>
+    <string name="web_themes_summary">You can choose different web themes.</string>
+    <string name="app_themes">App themes</string>
+    <string name="app_themes_summary">You can choose different app themes.</string>
+
+    <!-- About -->
+    <string name="more">More and credits</string>
+    <string name="more_apps">More Apps</string>
+    <string name="more_apps_summary">Have a look at the apps of the developer</string>
+    <string name="updates">Check for a new version</string>
+    <string name="updates_summary">Load the page and download the latest version</string>
+    <string name="people_who_translated">Users who translated the app</string>
+    <string name="devs_who_helped_me">Developers who helped me answering my questions and taking code from their apps</string>
+    <string name="help_translations">Help me to translate the app to your language</string>
+    <string name="about_translations">Help, we need you</string>
+    <string name="source_code">Source code on Github</string>
+    <string name="withYou">Report bugs or request new features</string>
+    <string name="changelog">Changelog</string>
+    <!-- End about -->
+
+</resources>

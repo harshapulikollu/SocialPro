@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="changelog_list" translatable="false">
+<![CDATA[
+<b>Version 1.0.07:</b>
+<br>
+- Bugs fixed and minor improvements.
+- New UI.
+- Added new content from other open source code.
+- Code cleaned.
+<br>
+    ]]></string>
+</resources>

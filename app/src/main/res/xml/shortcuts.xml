@@ -1,0 +1,38 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="Setttings"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_settings"
+        android:shortcutShortLabel="@string/menu_settings"
+        android:shortcutLongLabel="@string/menu_settings"
+        android:shortcutDisabledMessage="@string/compose_disabled_message1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="apps.shark.socialpro"
+            android:targetClass="apps.shark.socialpro.Activities.SettingsActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="Feed"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_most_recent"
+        android:shortcutShortLabel="@string/menu_top_stories"
+        android:shortcutLongLabel="@string/menu_top_stories"
+        android:shortcutDisabledMessage="@string/compose_disabled_message1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="apps.shark.socialpro"
+            android:targetClass="apps.shark.socialpro.Activities.MainActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/More">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:background="?attr/colorPrimaryDark" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/thankyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thank you,"
+                android:textSize="22sp"
+                android:textColor="#FF7043"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/app_icon"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="4"
+                android:layout_marginLeft="5dp" />
+
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/app_icon"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:src="@mipmap/active"
+                android:layout_marginTop="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                tools:ignore="ContentDescription" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harsha pulikollu say to all..."
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="4"
+                android:fontFamily="sans-serif-thin"
+                android:layout_above="@+id/thankyou"
+                android:layout_toEndOf="@+id/app_icon"
+                android:layout_marginStart="10dp" />
+        </RelativeLayout>
+        <fragment android:id="@+id/fragment_settings"
+            android:layout_width="fill_parent"
+            android:name="apps.shark.socialpro.Activities.More$MoreAndCredits"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/More"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

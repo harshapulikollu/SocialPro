@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "870872182590",
+    "firebase_url": "https://active-pro-6f401.firebaseio.com",
+    "project_id": "active-pro-6f401",
+    "storage_bucket": "active-pro-6f401.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870872182590:android:1c666e50aa745e68",
+        "android_client_info": {
+          "package_name": "apps.shark.socialpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870872182590-ni5tiiibh4v06dfu2pddcndqe60fnuve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0Vbd8Q5H_ZBzZ43M6wWc-H0whwnrlcnk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
