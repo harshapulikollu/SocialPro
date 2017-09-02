@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -77,5 +78,26 @@
             fab:fab_size="mini" />
 
     </com.github.clans.fab.FloatingActionMenu>
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/notifications_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_notifications_active"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="?attr/colorPrimary"
+        />
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/messages_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_messages_active"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="?attr/colorPrimary"
+       />
 
 </android.support.design.widget.CoordinatorLayout>

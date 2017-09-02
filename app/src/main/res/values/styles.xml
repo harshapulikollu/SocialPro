@@ -9,6 +9,11 @@
         <item name="windowActionModeOverlay">true</item>
     </style>
 
+    <style name="Social.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="Social" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/SocialPrimary</item>
         <item name="colorPrimaryDark">@color/SocialPrimaryDark</item>

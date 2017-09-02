@@ -151,6 +151,9 @@
             android:launchMode="singleTask"
             android:theme="@style/Photo" />
 
+        <activity android:name=".Activities.TwitterActivity"
+            android:theme="@style/Social"/>
+
         <service
             android:name=".MyFirebaseMessagingService">
             <intent-filter>

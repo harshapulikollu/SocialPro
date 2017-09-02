@@ -63,6 +63,8 @@ package apps.shark.socialpro.Activities;
         import android.widget.EditText;
         import android.widget.ImageView;
         import android.widget.ListView;
+
+        import com.andremion.counterfab.CounterFab;
         import com.bumptech.glide.Glide;
         import com.bumptech.glide.load.engine.DiskCacheStrategy;
         import com.bumptech.glide.request.animation.GlideAnimation;
@@ -142,6 +144,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private FloatingActionButton UploadFAB;
     Elements elements;
     AsyncTask mTask;
+    CounterFab notifFab, msgsFab;
     //firebase analytics
     private FirebaseAnalytics mFirebaseAnalytics;
 
@@ -188,6 +191,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mNavigationView.setNavigationItemSelectedListener(this);
         BookmarksView = (NavigationView) findViewById(R.id.BookmarksView);
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        //counter fab
+        notifFab = (CounterFab) findViewById(R.id.notifications_fab);
+        notifFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mWebView.loadUrl(baseURL + "notifications.php");
+                setTitle(R.string.nav_notifications);
+                Helpers.uncheckRadioMenu(mNavigationView.getMenu());
+                NotificationsService.ClearNotif(MainActivity.this);
+            }
+        });
+        msgsFab = (CounterFab) findViewById(R.id.messages_fab);
+        msgsFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mWebView.loadUrl(baseURL + "messages/");
+                NotificationsService.ClearMessages(MainActivity.this);
+                Helpers.uncheckRadioMenu(mNavigationView.getMenu());
+            }
+        });
 
         // Setup the toolbar
         Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -594,8 +618,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Enable or disable FAB
                 if (url.contains("messages") || !mPreferences.getBoolean("fab_enable", false)) {
                     mMenuFAB.setVisibility(View.GONE);
+                    msgsFab.setVisibility(View.GONE);
                 } else {
                     mMenuFAB.setVisibility(View.VISIBLE);
+                    msgsFab.setVisibility(View.VISIBLE);
                 }
 
                 if (url.contains("https://mbasic.facebook.com/composer/?text=")) {
@@ -1011,7 +1037,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         return dir.delete();
     }
-
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
@@ -1040,13 +1066,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         return super.onOptionsItemSelected(item);
 
-    }
+    } */
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         URLs();
         // Handle navigation view item clicks here.
         switch (item.getItemId()) {
+            /*case R.id.twitter:
+                Intent i = new Intent(this, TwitterActivity.class);
+                startActivity(i);
+                break; */
             case R.id.nav_top_stories:
                 mWebView.loadUrl(baseURL + "home.php?sk=h_nor");
                 setTitle(R.string.menu_top_stories);
@@ -1171,17 +1201,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void setNotificationNum(int num) {
         if (num > 0) {
-            ActionItemBadge.update(mNotificationButton, ResourcesCompat.getDrawable(getResources(), R.drawable.ic_notifications, null), num);
+            notifFab.setCount(num);
+            // notifFab.increase();
+            //notifFab.animate();
+            notifFab.setBackgroundColor(Color.RED);
+            // ActionItemBadge.update(mNotificationButton, ResourcesCompat.getDrawable(getResources(), R.drawable.ic_notifications, null), num);
         } else {
             ActionItemBadge.update(mNotificationButton, ResourcesCompat.getDrawable(getResources(), R.drawable.ic_notifications, null), Integer.MIN_VALUE);
         }
     }
-
     public void setMessagesNum(int num) {
         // Only update message count if enabled
         if (mPreferences.getBoolean("messaging_enabled", false)) {
             if (num > 0) {
-                ActionItemBadge.update(mNavigationView.getMenu().findItem(R.id.nav_messages), num);
+                msgsFab.setCount(num);
+                msgsFab.setBackgroundColor(Color.RED);
+                // msgsFab.increase();
+                //msgsFab.animate();
+                // ActionItemBadge.update(mNavigationView.getMenu().findItem(R.id.nav_messages), num);
             } else {
                 // Hide the badge and show the washed-out button
                 ActionItemBadge.update(mNavigationView.getMenu().findItem(R.id.nav_messages), Integer.MIN_VALUE);
